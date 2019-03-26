@@ -1,0 +1,148 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    background-color: darkcyan;
+}
+
+    nav li {
+        padding-right: 3em;
+    }
+
+    nav a {
+        font-weight: bolder;
+    }
+
+        nav a:hover {
+            color: black !important;
+        }
+
+.main {
+    background-color: black;
+    width: 100%;
+    margin-top:50px;
+}
+
+    .main .col-lg-8 {
+        padding: 0 !important;
+    }
+
+    .main img {
+        height: 100%;
+        width: 100%;
+    }
+
+.caption {
+    color: #fff;
+    background-color: darkcyan;
+}
+
+    .caption h1 {
+        text-align: center;
+        padding-left: 0;
+        border-bottom: solid 1px #fff;
+        margin: 0;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 100px #000;
+    }
+
+    .caption button {
+        display: block;
+        margin: 3em auto;
+        width: 50%;
+        font-weight: bold;
+    }
+
+.welcome {
+    padding-top: 2rem;
+    clear: both;
+}
+
+[class*="col-"] {
+    padding: 1rem;
+}
+
+#follow {
+    margin-top: 5em;
+}
+
+footer {
+    background-color: darkgrey;
+    margin-top: 3em;
+}
+
+.social a {
+    font-size: 4.7em;
+    padding: 0 1em;
+    text-decoration: none;
+}
+
+.fa-facebook {
+    color: #3b5998;
+}
+
+.fa-youtube {
+    color: #bb0000;
+}
+
+.fa-instagram {
+    border-radius: 10px;
+    color: #fff;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+hr.light {
+    border: 1px solid black;
+    width: 75%;
+}
+
+hr.light {
+    border: 1px solid black;
+    width: 100%;
+}
+
+@media (max-width: 1188px) {
+    .social a {
+        font-size: 4.5em;
+        padding: 0 .8em;
+    }
+
+    .rounded-circle {
+        height: 300px;
+        width: 250px;
+        padding: 1em;
+    }
+
+    .display-1 {
+        font-size: 4.5rem !important;
+    }
+}
+
+@media (max-width: 808px) {
+    .social a {
+        font-size: 2.5em;
+        padding: 0 .5em;
+    }
+}
+
+@media (max-width: 576px) {
+    .social a {
+        font-size: 2em;
+        padding: 0 .1em;
+    }
+
+    .rounded-circle {
+        height: 200px;
+        width: 150px;
+        padding: .5em;
+    }
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}

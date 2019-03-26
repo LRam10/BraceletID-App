@@ -1,0 +1,49 @@
+﻿@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+body {
+    background: url('../Images/signin-bg.jpeg') no-repeat fixed;
+    background-size:cover;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.modal-dialog,#loginFrom,#registerForm {
+    margin:0 auto;
+}
+#registerForm{
+    display:none;
+}
+/*Style for textbox*/
+.form-group input{
+    margin-bottom:2em;
+    border-radius:5px;
+    font-size:18px;
+    text-align:center;
+
+}
+.form-group::before{
+    font-family:'Font Awesome\ 5 Free';
+    content:"\f007";
+    position:absolute;
+    font-size:22px;
+    left:28px;
+    padding-top:2px;
+}
+button{
+    width:50%;
+    display:block;
+    margin:1em;
+    
+}
+.btn{
+    background-color:darkcyan;
+    color:#fff;
+    padding:10px;
+}
+.back >i {
+    padding-left:0;
+    font-size:40px;
+    cursor:pointer;
+    margin-right:7em;
+}

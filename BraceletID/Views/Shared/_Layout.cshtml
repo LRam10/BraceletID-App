@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link href="~/Content/styles.css" rel="stylesheet" type="text/css" />
+    <title>@ViewBag.Title - BraceltID</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top ">
+        <div class="container-fluid">
+            <div class="navbar header">
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#responsiveBar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="responsiveBar">
+                <ul class="nav navbar-nav ml-left">
+                    <li class="nav-item">@Html.ActionLink("Home", "Index", "Home", new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Styles", "Styles", "Home", new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("About", "About", "Home", new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Create", "Create", "Home", new { @class = "nav-link" })</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    @RenderBody()
+    <hr />
+
+
+
+    <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center ">
+                <div class="col-md-4">
+                    <hr class="light" />
+                    <h4>Contact Us</h4>
+                    <hr class="light">
+                    <p> 713-455-6789</p>
+                    <p>BraceletID@yahoo.com</p>
+                    <p> Houston,Tx</p>
+                    <p>Bracelet Inc.</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light" />
+                    <h4> Company Info</h4>
+                    <hr class="light" />
+                    <p>About Us</p>
+                    <p>Careers</p>
+                    <p>Partnerships</p>
+                    <p>Wholesale</p>
+                </div>
+                <div class="col-md-4">
+                    <hr class="light" />
+                    <h4>Other Services</h4>
+                    <hr class="light" />
+                    <p>Returns</p>
+                    <p>Ratings</p>
+                </div>
+                <div class="col-12">
+                    <hr class="light-10">
+                    <h5>&copy; BraceletID.com</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

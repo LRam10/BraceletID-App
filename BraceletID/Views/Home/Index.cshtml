@@ -1,0 +1,69 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class=" main container-fluid">
+    <div class="row padding">
+        <div class="col-lg-8">
+            <img src="~/Images/main-img.png" class="img-responsive">
+        </div>
+        <div class="caption col-lg-4">
+            <h1 class="display-1">Imagine</h1>
+            <h1 class=display-1>Create</h1>
+            <h1 class=display-1>Wear It</h1>
+            <button type="button" class ="btn btn-outline-light btn-lg" placeholder="SignIn" onclick="location.href='@Url.Action("SignIn", "SignIn" )'" >
+                SignIn</button>
+        </div>
+    </div>
+</div>
+<!-- Welcome paragraph-->
+<div class="container-fluid padding">
+    <div class=" row welcome text-center ">
+        <div class="col-12">
+            <h1 class="display-4">A Word From Our Team </h1>
+            <hr class="light">
+        </div>
+        <div class="col-12">
+            <p class="lead ">
+                "Each bracelet is hand made according to the customer requests.
+                Patience, is the key for creating each and every one of the bracelets.
+                We put a lot of effort to make sure to get every detail as perfect as possible.
+                We want to make sure the customers recieves the product as they imagined it to be.
+                Our team loves hearing all the positive feed back we get from the customers."-Felipe Ramirez, Product Management.
+            </p>
+        </div>
+    </div>
+</div>
+<!-- Three column Section-->
+<div class="container-fluid padding ">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <a href="#"><img src="~/Images/paracord.jpg" class="rounded-circle "></a>
+            <h2> Paracords</h2>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <a href="#"><img src="~/Images/red.jpg" class="rounded-circle"></a>
+            <h2> Red String </h2>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <a href="#"><img src="~/Images/chevron.jpg" class="rounded-circle"></a>
+            <h2> Chevron</h2>
+        </div>
+    </div>
+</div>
+<!-- Follow content-->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div id="follow" class="col-12">
+            <h1>Follow Us</h1>
+            <hr class="light">
+        </div>
+        <div class="col-12 social padding">
+            <a href="#"><i class="fab fa-facebook"></i> </a>
+            <a href="#"><i class="fab fa-twitter"></i> </a>
+            <a href="#"><i class="fab fa-instagram"></i> </a>
+            <a href="#"><i class="fab fa-youtube"></i> </a>
+
+        </div>
+    </div>
+</div>
