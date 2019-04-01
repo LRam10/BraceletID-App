@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Net.Mail;
 using System.Net;
-
+//We have to add the model for this controller,above with the other namespaces
 namespace BraceletID.Controllers
 {
     public class SignInController : Controller
@@ -20,10 +20,15 @@ namespace BraceletID.Controllers
         {
             return View();
         }
+        // Action to to return for user login 
+        public ActionResult UserView()
+        {
+            return View();
+        }
        
-            // creating the connection string with database server and database if using windows auth use integrated security =SSPi
-            // else use your server id and password
-            //conn.ConnectionString = "data source = LUISRAMIREZ61DC\\MYSQLRAMIREZ; database= UserLogin; user id =sa; password=Barcelona12";
+        // creating the connection string with database server and database if using windows auth use integrated security =SSPi
+        // else use your server id and password
+        //conn.ConnectionString = "data source = LUISRAMIREZ61DC\\MYSQLRAMIREZ; database= UserLogin; user id =sa; password=Barcelona12";
         //post method same as in php,called when login button is clicked
         [HttpPost]
         public ActionResult Verify(UserAccount acc)
@@ -52,8 +57,8 @@ namespace BraceletID.Controllers
                 conn.Open();
 
                 q.ExecuteReader();
-               
-               return View("UserView");
+
+                return RedirectToAction("UserView", "SignIn");
                 
             }
             
